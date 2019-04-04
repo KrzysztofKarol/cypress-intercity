@@ -10,6 +10,7 @@
   "author": "Krzysztof Karol",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^3.2.0"
+    "cypress": "^3.2.0",
+    "gmail-send": "^1.2.14"
   }
 }
