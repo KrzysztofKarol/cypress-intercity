@@ -7,10 +7,11 @@ const send = require('gmail-send')({
     subject: 'Bilet dostępny!',
 });
 
-const filepath = './cypress/screenshots/intercity.spec.js/Intercity -- Check if tickets are still unavailable (failed).png';
+const screenshot = './cypress/screenshots/intercity.spec.js/Intercity -- Check if tickets are still unavailable (failed).png';
+const logs = './logs.txt';
 
 send({
-    files: [filepath],
+    files: [screenshot, logs],
 }, function (err, res) {
     console.log('* [example 1.1] send() callback returned: err:', err, '; res:', res);
 });
